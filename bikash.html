@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikash payment method</title>
+  <!-- css framework cmd -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <main>
+    <div class="flex justify-center mt-5">
+      <div class="artboard bg-gradient-to-b from-cyan-100 to-blue-500  phone-2 rounded-lg">
+        <div
+          class="font-bold my-3 text-2xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-purple-500 to-pink-500">
+          <span class="text-black">🧑‍💻</span> Programming developer ---
+        </div>
+        <div class="divider"></div>
+        <!-- Amount valance total value -->
+        <div class="stats my-3 shadow ml-16">
+          <div class="stat">
+            <div
+              class="stat-title font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+              Total
+              Amount Balance</div>
+            <div id="amount-balance" class="stat-value text-center">9400</div>
+          </div>
+        </div>
+        <!-- Button selector -->
+        <div class="flex justify-center">
+          <button id="btn-show-add-money"
+            class="btn w-40 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-bold"><span
+              class="mr-4">🤖</span> Add
+            Money</button>
+          <button id="btn-show-cash-out"
+            class="btn w-40 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-bold">
+            <span class="mr-4">🤖</span> Cash Out</button>
+        </div>
+        <div class="flex mx-auto">
+          <button
+            class="btn w-80 ml-7 my-4 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% font-bold text-2xl">Transition</button>
+        </div>
+        <!-- Get the add money balance starts -->
+        <div id="show-add-balance" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl my-1">
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Amount</span>
+              </label>
+              <input id="input-add-balance" type="number" placeholder="Enter Your Amount" class="input input-bordered"
+                required />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Pin Code</span>
+              </label>
+              <input id="input-pin-code" type="password" placeholder="Enter Pin Code" class="input input-bordered"
+                required />
+            </div>
+            <div class="form-control mt-6">
+              <button id="btn-add-balance" class="btn btn-primary">Add Money</button>
+            </div>
+          </form>
+        </div>
+        <!-- Get the Add money balance ends -->
+        <!-- Get the Cash Out money starts -->
+        <div id="show-cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl my-1">
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Amount</span>
+              </label>
+              <input id="input-cash-out" type="number" placeholder="Enter Your Amount" class="input input-bordered"
+                required />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Pin Code</span>
+              </label>
+              <input id="input-pin-cash" type="password" placeholder="Enter Pin Code" class="input input-bordered"
+                required />
+            </div>
+            <div class="form-control mt-6">
+              <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+            </div>
+          </form>
+        </div>
+        <!-- Get the Cash Out money ends -->
+      </div>
+    </div>
+  </main>
+  <script src="JS/bikash.js"></script>
+  <script src="JS/cashOut.js"></script>
+  <script src="JS/features.js"></script>
+</body>
+
+</html>
